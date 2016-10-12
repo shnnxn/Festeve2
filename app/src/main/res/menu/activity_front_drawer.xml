@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/signin"
+
+            android:title="Sign In" />
+        <item
+            android:id="@+id/intrested"
+
+            android:title="Intrested" />
+        <item
+            android:id="@+id/register"
+
+            android:title="Register" />
+        <item
+            android:id="@+id/calender"
+
+            android:title="Calender" />
+        <item
+            android:id="@+id/admin"
+            android:title="Register as Admin"/>
+    </group>
+
+    <item android:title="Manage Fest">
+        <menu>
+            <item
+                android:id="@+id/registrations"
+
+                android:title="Registrations" />
+            <item
+                android:id="@+id/createfest"
+
+                android:title="Create Fest" />
+            <item
+                android:id="@+id/modifyfest"
+                android:title="Modify Fest"/>
+        </menu>
+    </item>
+
+</menu>
