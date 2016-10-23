@@ -23,18 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".searchresult" >
-
-
+        <activity android:name=".searchresult">
             <intent-filter>
                 <action android:name="com.example.android.festeve.searchresult" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -43,6 +38,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.festeve.FrontActivity" />
         </activity>
+        <activity android:name=".create_fest"></activity>
     </application>
 
 </manifest>

@@ -19,4 +19,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_create_fest">create_fest</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_fest_create">fest_create</string>
 </resources>
