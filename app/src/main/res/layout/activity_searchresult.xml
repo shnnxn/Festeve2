@@ -7,9 +7,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#d3d3d3"
     tools:context="com.example.android.festeve.searchresult">
 
     <SearchView
+        android:background="#ffffff"
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +19,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <ListView
+        android:background="#ffffff"
         android:layout_below="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
