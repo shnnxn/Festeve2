@@ -30,15 +30,34 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LoginActivity"
+        <activity android:name=".LoginActivity">
             android:label="@string/title_activity_login"
             android:parentActivityName=".FrontActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.festeve.FrontActivity" />
+
+            <intent-filter>
+                <action android:name="com.example.android.festeve.LoginActivity" />
+
+                <category android:name="andoid.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
-        <activity android:name=".create_fest"></activity>
+        <activity android:name=".create_fest">
+            <intent-filter>
+                <action android:name="com.example.android.festeve.create_fest" />
+
+                <category android:name="andoid.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intrested">
+            <intent-filter>
+                <action android:name="com.example.android.festeve.intrested" />
+
+                <category android:name="andoid.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fest_feeds"></activity>
     </application>
 
 </manifest>
