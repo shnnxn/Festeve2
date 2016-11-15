@@ -87,17 +87,24 @@ public class FrontActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.signin) {
+        if (id == R.id.ffeeds) {
 
-        } else if (id == R.id.intrested) {
+
+        } else if (id == R.id.cal) {
 
         } else if (id == R.id.register) {
 
-        } else if (id == R.id.calender) {
+        } else if (id == R.id.interested) {
 
-        } else if (id == R.id.admin) {
+        } else if (id == R.id.signup) {
 
-        } else if (id == R.id.registrations) {
+        } else if (id == R.id.createfest) {
+
+        } else if (id == R.id.modifyfest) {
+
+        } else if (id == R.id.delfest) {
+
+        } else if (id == R.id.venroll) {
 
         }
 

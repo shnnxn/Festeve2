@@ -3,32 +3,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/signin"
+            android:id="@+id/ffeeds"
 
-            android:title="Sign In" />
+            android:title="Fest Feeds" />
         <item
-            android:id="@+id/intrested"
+            android:id="@+id/cal"
 
-            android:title="Interested" />
+            android:title="Calendar" />
         <item
             android:id="@+id/register"
 
-            android:title="Register" />
+            android:title="Registered Events" />
         <item
-            android:id="@+id/calender"
+            android:id="@+id/interested"
 
-            android:title="Calender" />
-        <item
-            android:id="@+id/admin"
-            android:title="Register as Admin"/>
+            android:title="Interested Events" />
     </group>
 
-    <item android:title="Manage Fest">
+    <item android:title="Admin Panel">
         <menu>
             <item
-                android:id="@+id/registrations"
+                android:id="@+id/signup"
 
-                android:title="Registrations" />
+                android:title="Sign Up" />
             <item
                 android:id="@+id/createfest"
 
@@ -36,6 +33,13 @@
             <item
                 android:id="@+id/modifyfest"
                 android:title="Modify Fest"/>
+
+            <item
+                android:id="@+id/delfest"
+                android:title="Delete Fest"/>
+            <item
+                android:id="@+id/venroll"
+                android:title="View Enrollments"/>
         </menu>
     </item>
 
