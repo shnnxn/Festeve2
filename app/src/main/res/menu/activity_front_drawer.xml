@@ -9,7 +9,7 @@
         <item
             android:id="@+id/intrested"
 
-            android:title="Intrested" />
+            android:title="Interested" />
         <item
             android:id="@+id/register"
 
