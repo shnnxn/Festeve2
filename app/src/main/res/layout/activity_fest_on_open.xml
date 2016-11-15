@@ -55,5 +55,27 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+<<<<<<< HEAD
+=======
+    <Button
+        android:text="View Event List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:text="Enroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+>>>>>>> origin/master
 
 </RelativeLayout>
