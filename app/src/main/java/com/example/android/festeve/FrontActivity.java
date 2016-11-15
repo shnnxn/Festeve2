@@ -13,6 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
+
+
+
+
+
+
 public class FrontActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
