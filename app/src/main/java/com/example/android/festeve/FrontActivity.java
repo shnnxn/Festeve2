@@ -13,6 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
+import android.content.Intent;
+
 public class FrontActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -80,19 +83,51 @@ public class FrontActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.signin) {
+        if (id == R.id.ffeeds) {
+            Intent a=new Intent(getApplicationContext(),fest_feeds.class);
+            startActivity(a);
 
-        } else if (id == R.id.intrested) {
+
+        } else if (id == R.id.cal) {
+            Intent b=new Intent(getApplicationContext(),FestCalendarActivity.class);
+            startActivity(b);
 
         } else if (id == R.id.register) {
+            Intent c=new Intent(getApplicationContext(),enrollment.class);
+            startActivity(c);
 
-        } else if (id == R.id.calender) {
+        } else if (id == R.id.interested) {
+            Intent d=new Intent(getApplicationContext(),intrested.class);
+            startActivity(d);
 
-        } else if (id == R.id.admin) {
+        } else if (id == R.id.signup) {
+            Intent e=new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(e);
 
-        } else if (id == R.id.registrations) {
+        } else if (id == R.id.createfest) {
+            Intent f=new Intent(getApplicationContext(),create_fest.class);
+            startActivity(f);
+
+        } else if (id == R.id.modifyfest) {
+            Intent g=new Intent(getApplicationContext(),ModifyFestOptionActivity.class);
+            startActivity(g);
+            //if empty = display no entries
+            //else display open the page with all the entries in database with a feature to change
+
+        } else if (id == R.id.delfest) {
+            Intent h=new Intent(getApplicationContext(),ModifyFestOptionActivity.class);
+            startActivity(h); //to access same options as in modify
+
+        } else if (id == R.id.venroll) {
+            Intent i=new Intent(getApplicationContext(),ViewEnrollmentActivity.class);
+            startActivity(i);
 
         }
+
+///changes end/
+
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

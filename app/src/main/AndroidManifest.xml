@@ -30,7 +30,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:parentActivityName=".FrontActivity">
             <meta-data
@@ -57,7 +58,13 @@
                 <category android:name="andoid.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".fest_feeds"></activity>
+        <activity android:name=".fest_feeds" />
+        <activity android:name=".fest_on_open" />
+        <activity android:name=".enrollment" />
+        <activity android:name=".Event_lists" />
+        <activity android:name=".FestCalendarActivity" />
+        <activity android:name=".ViewEnrollmentActivity" />
+        <activity android:name=".ModifyFestOptionActivity"></activity>
     </application>
 
 </manifest>
