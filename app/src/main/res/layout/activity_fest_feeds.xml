@@ -10,4 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.festeve.fest_feeds">
 
+    <StackView
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

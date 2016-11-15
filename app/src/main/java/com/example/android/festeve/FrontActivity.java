@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class FrontActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -77,20 +78,35 @@ public class FrontActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.signin) {
+                    Intent intentSignUp=new Intent(getApplicationContext(),LoginActivity.class);
+                    startActivity(intentSignUp);
 
-        } else if (id == R.id.intrested) {
+
+        }
+        else if (id == R.id.intrested) {
+            Intent intentSignUp=new Intent(getApplicationContext(),intrested.class);
+            startActivity(intentSignUp);
 
         } else if (id == R.id.register) {
+            Intent intentSignUp=new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(intentSignUp);
 
         } else if (id == R.id.calender) {
+            Intent intentSignUp=new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(intentSignUp);
 
         } else if (id == R.id.admin) {
+            Intent intentSignUp=new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(intentSignUp);
 
         } else if (id == R.id.registrations) {
+            Intent intentSignUp=new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(intentSignUp);
 
         }
 
