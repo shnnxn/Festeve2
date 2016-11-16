@@ -23,13 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".searchresult">
+
+
+        <activity android:name=".searchresult"
+                  android:label="Search">
             <intent-filter>
                 <action android:name="com.example.android.festeve.searchresult" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -44,27 +49,53 @@
                 <category android:name="andoid.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".create_fest">
+
+
+        <activity android:name=".create_fest"
+                  android:label="Create Fest">
             <intent-filter>
                 <action android:name="com.example.android.festeve.create_fest" />
 
                 <category android:name="andoid.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".intrested">
+
+
+        <activity android:name=".intrested"
+            android:label="Interested">
             <intent-filter>
                 <action android:name="com.example.android.festeve.intrested" />
 
                 <category android:name="andoid.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".fest_feeds" />
+
+        <activity android:name=".fest_feeds"
+                  android:label="Fest Feeds"
+
+            />
+
         <activity android:name=".fest_on_open" />
+
         <activity android:name=".enrollment" />
-        <activity android:name=".Event_lists" />
-        <activity android:name=".FestCalendarActivity" />
-        <activity android:name=".ViewEnrollmentActivity" />
-        <activity android:name=".ModifyFestOptionActivity"></activity>
+
+        <activity android:name=".Event_lists"
+        android:label="Event List"
+            />
+
+
+        <activity android:name=".FestCalendarActivity"
+            android:label="Fest Calender"/>
+
+        <activity android:name=".ViewEnrollmentActivity"
+            android:label="Enrollments" />
+
+        <activity android:name=".ModifyFestOptionActivity"
+            android:label="Select Fest"/>
+
+        <activity android:name=".AddEventsActivity">
+
+        </activity>
     </application>
 
 </manifest>

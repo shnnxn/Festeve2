@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/ffeeds"
 
-            android:title="Fest Feeds" />
+            android:title="Fest Feeds"
+            android:icon="@android:drawable/ic_menu_set_as" />
         <item
             android:id="@+id/cal"
 
-            android:title="Calendar" />
+            android:title="Calendar"
+            android:icon="@android:drawable/ic_menu_today"
+            balloonberry:showAsAction="always"
+
+            android:visible="true"
+            android:enabled="true" />
         <item
             android:id="@+id/register"
 
-            android:title="Registered Events" />
+            android:title="Registered Events"
+            android:icon="@android:drawable/btn_star_big_on" />
         <item
             android:id="@+id/interested"
 
-            android:title="Interested Events" />
+            android:title="Interested Events"
+            android:icon="@android:drawable/ic_menu_view" />
     </group>
 
     <item android:title="Admin Panel">
@@ -25,21 +34,26 @@
             <item
                 android:id="@+id/signup"
 
-                android:title="Sign Up" />
+                android:title="Sign Up"
+                android:icon="@android:drawable/ic_menu_edit" />
             <item
                 android:id="@+id/createfest"
 
-                android:title="Create Fest" />
+                android:title="Create Fest"
+                android:icon="?android:attr/actionModePasteDrawable" />
             <item
                 android:id="@+id/modifyfest"
-                android:title="Modify Fest"/>
+                android:title="Modify Fest"
+                android:icon="?android:attr/actionModeSelectAllDrawable" />
 
             <item
                 android:id="@+id/delfest"
-                android:title="Delete Fest"/>
+                android:title="Delete Fest"
+                android:icon="@android:drawable/ic_delete" />
             <item
                 android:id="@+id/venroll"
-                android:title="View Enrollments"/>
+                android:title="View Enrollments"
+                android:icon="?android:attr/actionModeFindDrawable" />
         </menu>
     </item>
 
