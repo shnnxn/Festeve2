@@ -20,6 +20,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="#ffffff"
+        android:queryHint="Fest Name or College"
+        android:showAsAction="collapseActionView|ifRoom"
 
 
         />

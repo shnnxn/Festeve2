@@ -20,8 +20,8 @@
         android:text="College"
         android:ems="10"
         android:layout_marginTop="31dp"
-        android:id="@+id/editText1"
-        android:layout_below="@+id/editText"
+        android:id="@+id/collegetext"
+        android:layout_below="@+id/nametext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -31,8 +31,8 @@
         android:inputType="textPersonName"
         android:text="City"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText1"
+        android:id="@+id/citytext"
+        android:layout_below="@+id/collegetext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="25dp" />
@@ -44,7 +44,7 @@
         android:text="Fest Name"
         android:ems="10"
         android:layout_marginTop="74dp"
-        android:id="@+id/editText"
+        android:id="@+id/nametext"
         android:layout_alignTop="@+id/imageButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -57,7 +57,8 @@
         android:layout_alignBottom="@+id/imageButton"
         android:layout_alignTop="@+id/imageButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:id="@+id/up_img_text" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -65,11 +66,11 @@
         android:inputType="date"
         android:ems="10"
         android:text="Enter date"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/citytext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="19dp"
-        android:id="@+id/editText3"
+        android:id="@+id/date"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -88,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
-        android:layout_above="@+id/editText"
+        android:layout_above="@+id/nametext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
