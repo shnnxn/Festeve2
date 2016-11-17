@@ -18,7 +18,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Name"
+        android:paddingBottom="12dp"
         android:ems="10"
+        android:background="#ffffff"
         android:id="@+id/editText4"
         android:layout_marginTop="32dp"
         android:layout_alignParentTop="true"
@@ -27,6 +29,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="12dp"
         android:inputType="textEmailAddress"
         android:text="E-mail"
         android:ems="10"
@@ -35,37 +39,44 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     [<EditText
+    android:paddingBottom="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="Contact Number"
         android:ems="10"
+    android:background="#ffffff"
         android:id="@+id/editText6"
         android:layout_below="@+id/editText5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <EditText
+        android:paddingBottom="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="City"
         android:ems="10"
+        android:background="#ffffff"
         android:id="@+id/editText7"
         android:layout_below="@+id/editText6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <EditText
+        android:paddingBottom="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:text="College/University"
         android:ems="10"
         android:id="@+id/editText8"
+        android:background="#ffffff"
         android:layout_below="@+id/editText7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
+        android:paddingBottom="12dp"
         android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
