@@ -106,13 +106,13 @@ public class FrontActivity extends AppCompatActivity
             startActivity(f);
 
         } else if (id == R.id.modifyfest) {
-            Intent g=new Intent(getApplicationContext(),ModifyFestOptionActivity.class);
+            Intent g=new Intent(getApplicationContext(),SelectFestActivity.class);
             startActivity(g);
             //if empty = display no entries
             //else display open the page with all the entries in database with a feature to change
 
         } else if (id == R.id.delfest) {
-            Intent h=new Intent(getApplicationContext(),ModifyFestOptionActivity.class);
+            Intent h=new Intent(getApplicationContext(),SelectFestActivity.class);
             startActivity(h); //to access same options as in modify
 
         } else if (id == R.id.venroll) {
