@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#d3d3d3"
+    android:background="@drawable/createfest"
     tools:context="com.example.android.festeve.create_fest">
 
 
@@ -17,8 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="College"
         android:ems="10"
+        android:hint="College Name"
         android:layout_marginTop="31dp"
         android:id="@+id/collegetext"
         android:layout_below="@+id/nametext"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="City"
+        android:hint="Enter City"
         android:ems="10"
         android:id="@+id/citytext"
         android:layout_below="@+id/collegetext"
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Fest Name"
+        android:hint="Fest Name"
         android:ems="10"
         android:layout_marginTop="74dp"
         android:id="@+id/nametext"
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:text="Enter date"
+        android:hint="Enter date"
         android:layout_below="@+id/citytext"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -80,6 +80,7 @@
         app:srcCompat="@drawable/ic_menu_gallery"
         android:id="@+id/imageButton"
         android:layout_marginTop="34dp"
+
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -98,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button4"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/date"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
 
