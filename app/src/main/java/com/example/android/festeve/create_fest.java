@@ -93,6 +93,8 @@ public class create_fest extends AppCompatActivity {
                 if(v.getId()==R.id.button4)
                 {
                     Toast.makeText(getApplicationContext(), "Fest Created Successfully",Toast.LENGTH_SHORT).show();
+                    Intent q=new Intent(getApplicationContext(),SelectFestActivity.class);
+                    startActivity(q);
 
                 }
 

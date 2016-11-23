@@ -5,7 +5,7 @@ import org.w3c.dom.Text;
 
 public class createFestclass {
 
-    public String fest_name;
+    public static String fest_name;
     public String college;
     public String city;
     public String s_date;
@@ -15,7 +15,7 @@ public class createFestclass {
     }
     //Getters and setters
 
-    public String getFestName() {
+    public static String getFestName() {
         return fest_name;
     }
 

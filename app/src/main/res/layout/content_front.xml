@@ -6,55 +6,61 @@
     tools:context="com.example.android.festeve.FrontActivity"
     tools:showIn="@layout/app_bar_front"
     android:id="@+id/content_front"
+    android:background="#d3d3d3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/frontfin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    >
 
 
 
-  >
-
-
-    <SearchView
-        android:id="@+id/search"
+   <!-- <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="#ffffff"
-        android:queryHint="Fest Name or College"
-        android:showAsAction="collapseActionView|ifRoom"
+        android:layout_height="match_parent"
+        android:background="@drawable/frontfin"
+        android:scaleType="centerCrop"/> -->
 
 
-        />
+
 
     <android.support.v7.widget.CardView
-        android:id="@+id/card"
         android:layout_width="match_parent"
-        android:layout_marginTop="8dp"
         android:layout_height="200dp"
+        android:id="@+id/festcard"
+        android:background="#ffffff"
+        app:cardElevation="10dp" />
+
+
+
+    <TextView
+        android:text=" Upcoming Fests and Events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/festcard"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/search"
-        android:background="@color/cardview_dark_background"
-        app:cardElevation="12dp" />
+        android:layout_marginTop="10dp"
+        android:id="@+id/upfests"
+        android:background="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
 
     <ListView
-        android:background="#ffffff"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_below="@+id/card"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_alignParentBottom="true"
         android:id="@+id/festlist"
-        android:clickable="true" />
-
-
-
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="120dp"
+        android:layout_marginBottom="2dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/upfests" />
 
 
 

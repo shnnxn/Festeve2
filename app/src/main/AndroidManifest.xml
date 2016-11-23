@@ -37,6 +37,7 @@
 
 
         <activity
+
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:parentActivityName=".FrontActivity">
@@ -92,12 +93,27 @@
         <activity android:name=".ViewEnrollmentActivity"
             android:label="Enrollments" />
 
-        <activity android:name=".ModifyFestOptionActivity"
-            android:label="Select Fest"/>
 
-        <activity android:name=".AddEventsActivity">
+
+        <activity android:name=".SelectFestActivity"
+            android:label="Select Fest">
+        <intent-filter>
+            <action android:name="com.example.android.festeve.SelectFestActivity" />
+
+            <category android:name="andoid.intent.category.DEFAULT" />
+        </intent-filter>
+
+           </activity>
+
+        <activity android:name=".AddEventsActivity"
+            android:label="Add Events">
 
         </activity>
+
+
+
+
+
     </application>
 
 </manifest>

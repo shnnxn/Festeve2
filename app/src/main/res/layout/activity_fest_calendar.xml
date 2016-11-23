@@ -15,28 +15,34 @@
     <CalendarView
         android:background="#ffffff"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/calendarView"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="180dp" />
 
+
     <TextView
         android:text="  This Month "
         android:textStyle="bold"
+        android:id="@+id/month"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/datelist"
+        android:background="#ffffff"
         android:layout_marginBottom="2dp"
-        android:background="#ffffff"/>
+        android:layout_above="@+id/datelist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 
     <ListView
-        android:id="@+id/datelist"
-        android:layout_width="match_parent"
+         android:id="@+id/datelist"
+         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#ffffff"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true" />
+         android:background="#ffffff"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true" />
+
 
 </RelativeLayout>

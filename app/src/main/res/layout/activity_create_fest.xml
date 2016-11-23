@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/createfest"
+    android:background="#d3d3d3"
     tools:context="com.example.android.festeve.create_fest">
 
 

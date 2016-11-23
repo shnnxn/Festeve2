@@ -10,4 +10,7 @@ public class searchresult extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searchresult);
     }
+
+
+
 }
