@@ -5,9 +5,11 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.AuthData;
@@ -16,6 +18,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import static com.example.android.festeve.R.id.TxtEmail;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -54,6 +59,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //attaching listener to button
         buttonSignup.setOnClickListener(this);
+
+
+
+
+
+
+
     }
 
 
@@ -67,6 +79,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         //getting email and password from edit texts
         String email = editTextEmail.getText().toString().trim();
         String password  = editTextPassword.getText().toString().trim();
+
+
 
         //checking if email and passwords are empty
         if(TextUtils.isEmpty(email)){
@@ -116,7 +130,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 **/
-
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        auth.addAuthStateListener(new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull final FirebaseAuth firebaseAuth) {
+                final FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    Log.i("AuthStateChanged", "User is signed in with uid: " + user.getUid());
+                } else {
+                    Log.i("AuthStateChanged", "No user is signed in.");
+                }
+            }
+        });
 
 
     }

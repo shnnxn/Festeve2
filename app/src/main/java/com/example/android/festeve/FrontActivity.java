@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +18,8 @@ import android.view.MenuItem;
 
 
 import android.content.Intent;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.AuthData;
@@ -24,6 +27,11 @@ import com.firebase.client.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import static com.example.android.festeve.R.id.TxtEmail;
+import static com.example.android.festeve.R.id.email;
+
+
+@SuppressWarnings("ResourceType")
 public class FrontActivity extends AppCompatActivity
 
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -49,6 +57,9 @@ public class FrontActivity extends AppCompatActivity
             }
         });
 
+        ////////Code is used to fetch the user name////////////
+
+        /////////////////////////
 
 
 
@@ -81,9 +92,14 @@ public class FrontActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+       TextView txtEmail = (TextView) findViewById(R.id.TxtEmail);
+
+
+
+
 
     }
 
