@@ -120,5 +120,5 @@ public class ReadRss extends AsyncTask<Void,Void,Void> {
             e.printStackTrace();
             return null;
         }
-    }
+    }                                                              //
 }
